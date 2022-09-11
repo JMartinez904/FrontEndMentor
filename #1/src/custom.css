@@ -1,0 +1,59 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+.contain__image{
+    content: url('../images/image-product-desktop.jpg');
+}
+
+.contain__button{
+    background-color: hsl(158, 36%, 37%);
+    color:white;
+    transition: ease 0.5s;
+}
+
+.contain__button:hover{
+    background-color: hsl(212, 21%, 14%)
+}
+
+.contain__price{
+    color: hsl(158, 36%, 37%);
+}
+
+.contain__price span{
+    position: relative;
+    color: hsl(228, 12%, 48%);
+    overflow: hidden;
+    font-family: 'Montserrat';
+}
+
+.contain__price span::after{
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    background: hsl(228, 12%, 48%);
+    content: '';
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+}
+
+.contain__tag{
+    letter-spacing: .2rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.contain__description{
+    color: hsl(228, 12%, 48%);
+}
+
+.main-container{
+    display: block;
+}
+
+@media (max-width: 425px) {
+    .contain__image{
+        content: url('../images/image-product-mobile.jpg');
+    }
+}
