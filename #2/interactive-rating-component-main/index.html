@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link href="./src/style.css" rel="stylesheet">
+  <link href="./src/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <section class="flex items-center p-4 h-screen">
+    <div class="container p-6 mx-auto container_rate rounded-lg max-w-sm">
+      <div class="init">
+        <div class="block w-10 px-3 py-3 rounded-full star">
+          <img src="./images/icon-star.svg" alt="" class="block">
+        </div>
+        <h2 class="font-overpass text-3xl mt-4 font-bold">
+          How did we do?
+        </h2>
+  
+        <p class="font-overpass font-bold my-4 whitespace-normal text-base">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+  
+        <div class="py-4">
+          <div class="hidden">
+            <input type="radio" name="rate" id="1" value="1">
+            <input type="radio" name="rate" id="2" value="2">
+            <input type="radio" name="rate" id="3" value="3">
+            <input type="radio" name="rate" id="4" value="4">
+            <input type="radio" name="rate" id="5" value="5">
+          </div>
+          <div class="flex justify-between">
+            <label for="1" class="px-5 py-3 rounded-full font-bold rate font-overpass">1</label>
+            <label for="2" class="px-5 py-3 rounded-full font-bold rate font-overpass">2</label>
+            <label for="3" class="px-5 py-3 rounded-full font-bold rate font-overpass">3</label>
+            <label for="4" class="px-5 py-3 rounded-full font-bold rate font-overpass">4</label>
+            <label for="5" class="px-5 py-3 rounded-full font-bold rate font-overpass">5</label>
+          </div>
+        </div>
+  
+        <button type="button"
+          class="py-4 my-2 rounded-l-full rounded-r-full block mx-auto w-full text-white button font-bold tracking-widest uppercase font-overpass">
+          Submit
+        </button>
+      </div>
+      <div class="output hidden">
+        <!-- Rating state end -->
+        <div class="flex justify-center py-4">
+          <img src="./images/illustration-thank-you.svg" alt="">
+        </div>
+        <!-- Thank you state start -->
+      <div class="font-overpass block mx-auto text-center rounded-full font-bold whitespace-nowrap p_rate rate w-2/3 my-4">
+        You selected <span id="rate"></span> out of 5
+      </div>
+  
+        <h2 class="text-3xl text-center font-bold mt-6 font-overpass">Thank you!</h2>
+        <p class="font-bold my-4 whitespace-normal text-center text-base font-overpass">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+  
+        <!-- Thank you state end -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">José Martínez</a>.
+  </div>
+</body>
+<script src="./src/app.js"></script>
+
+</html>
