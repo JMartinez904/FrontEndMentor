@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VerydarkbluemainBG: hsl(217, 54%, 11%);
+    --VerydarkbluecardBG: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--VerydarkbluemainBG);
+}
+
+.container{
+    background-color: var(--VerydarkbluecardBG);
+}
+
+.container h3{
+    font-family: 'Outfit';
+}
+
+.container_paragraph{
+    color:var(--Softblue);
+    font-family: 'Outfit';
+    font-weight: 300;
+}
+
+.container_currency{
+    color: var(--Cyan);
+    font-family: 'Outfit';
+    
+}
+
+.container_timer{
+    color:var(--Softblue);
+    font-family: 'Outfit';
+}
+
+.container_author p {
+    color: var(--Softblue);
+    font-family: 'Outfit';
+}
