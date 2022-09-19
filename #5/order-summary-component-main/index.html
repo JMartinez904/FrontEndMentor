@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body class="flex w-full justify-center items-center h-screen bg-paleblue relative">
+
+  <main>
+    <img src="./images/pattern-background-desktop.svg" class="absolute top-0 left-0 z-[-1] hidden sp:block" alt="">
+    <img src="./images/pattern-background-mobile.svg" class="absolute top-0 left-0 z-[-1] block sp:hidden" alt="">
+    <div class="max-w-sm rounded-2xl overflow-hidden bg-white sp:max-w-sp">
+      <div>
+        <img src="./images/illustration-hero.svg" alt="">
+      </div>
+      <div class="p-6 sp:p-10">
+        <h1 class="text-center font-redhat font-black text-2xl text-darkblue mt-1 sp:text-3xl">
+          Order Summary
+        </h1>
+        <p class="text-center text-desaturatedblue font-medium py-4 leading-relaxed text-base">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
+        <div class="flex justify-between bg-very-pale-blue items-center p-3 rounded-xl mt-4 mb-2 sp:mt-2 sp:p-4">
+          <div class="inline py-1">
+            <img src="./images/icon-music.svg" alt="" class="inline align-text-bottom px-2">
+            <p class="inline-block align-text-bottom font-redhat font-black ml-2">
+              Annual Plan
+              <span class="block text-desaturatedblue font-normal">
+                $59.99/year
+              </span>
+            </p>
+          </div>
+          <a class="mr-2 text-brightblue font-redhat font-bold underline decoration-underline hover:no-underline hover:text-brightblue/50 active:text-brightblue transition-all cursor-pointer text-sm">
+            Change
+          </a>
+        </div>
+        <button type="button" class="text-center block w-full p-3 bg-brightblue text-white font-redhat font-bold rounded-xl drop-shadow-2xl mt-6 hover:bg-brightblue/50 active:bg-brightblue transition-all font-size text-base">
+          Proceed to Payment
+        </button>
+        <a class="block w-full text-center font-redhat font-bold text-desaturatedblue mt-6 transition-all hover:text-darkblue active:text-desaturatedblue cursor-pointer">
+          Cancel Order
+        </a>
+      </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">José Martínez</a>.
+    </div>
+  </main>
+
+</body>
+</html>
