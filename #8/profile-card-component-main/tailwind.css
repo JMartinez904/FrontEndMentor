@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 600px) {
+    body{
+        background-position: -65% 180%,165% -92%;
+    }
+} 
+@media (min-width: 1000px){
+    body{
+        background-position: -65% 250%,165% -92%;
+    }
+}
+@media (max-width: 600px){
+    body{
+    background-position: 125% 180%,-30% -80%;
+    }
+}

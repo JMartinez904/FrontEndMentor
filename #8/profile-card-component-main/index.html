@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="./src/style.css" rel="stylesheet">
+  
+</head>
+<body class="w-full flex flex-col justify-center items-center h-screen bg-darkcyan" 
+style="
+background-image:url('./images/bg-pattern-top.svg'),url('./images/bg-pattern-bottom.svg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+">
+  <main>
+    <section class="w-full rounded-2xl overflow-hidden drop-shadow-2xl">
+      <div class="w-[350px] h-[140px] bg-no-repeat bg-center" style="background-image:url('./images/bg-pattern-card.svg')">
+      </div>
+      <div class="bg-white flex flex-col items-center">
+        <picture class="block mt-[-15.5%] border-[5px] border-white rounded-full overflow-hidden">
+          <img src="./images/image-victor.jpg" alt="">
+        </picture>
+        <div class="mt-3 mb-6">
+          <p class="font-KumbhSans font-bold text-verydarkdesaturatedblue text-lg leading-loose">
+            Victor Crest <span class="font-normal text-darkgrayishblue ml-1">26</span>
+            <span class="font-normal text-darkgrayishblue text-sm text-center block">London</span>
+          </p>
+        </div>
+        <div class="flex border-t w-full items-center justify-around py-[1.4rem] pr-8 pl-5">
+          <p class="font-KumbhSans text-lg text-center text-verydarkdesaturatedblue font-bold">
+            80K
+            <span class="block text-xs tracking-widest font-medium text-darkgrayishblue sm:text-[0.65rem]">
+              Followers
+            </span>
+          </p>
+          <p class="font-KumbhSans text-lg text-center text-verydarkdesaturatedblue font-bold">
+            803K
+            <span class="block text-xs tracking-widest font-medium text-darkgrayishblue sm:text-[0.65rem]">
+              Likes
+            </span>
+          </p>
+          <p class="font-KumbhSans text-lg text-center text-verydarkdesaturatedblue font-bold">
+            1.4K
+            <span class="block text-xs tracking-widest font-medium text-darkgrayishblue sm:text-[0.65rem]">
+              Photos
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-20">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/JMartinez904">José Martínez</a>.
+    </div>
+  </footer>
+</body>
+</html>
