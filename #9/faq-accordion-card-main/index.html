@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 15px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex justify-center items-center flex-col h-full bg-gradient-to-b from-Softviolet to-Softblue bg-no-repeat bg-fixed">
+  <section class="flex flex-col justify-center w-full max-w-[21rem] align-items-center bg-white rounded-3xl px-6 py-2 mt-[8rem] lg:flex-row lg:max-w-[58rem] lg:px-0 lg:py-0 lg:h-[500px] shadow-2xl">
+      <div>
+        <picture>
+            <div class="lg:hidden">
+              <img class="w-64 absolute mt-[-7.75rem] left-1/2 transform -translate-x-1/2" src="./images/ illustration-woman-online-mobile.svg" alt="">
+              <img class="w-64 m-auto mt-[-0.50rem]" src="./images/bg-pattern-mobile.svg"     alt="bg-pattern-mobile.svg">
+            </div>
+            <div class="hidden relative h-full bg-no-repeat bg-right-bottom img-container lg:block" style="background-image: url('./images/bg-pattern-desktop.svg'); background-position: 115% 66%; ">
+            <style>
+              .img-container::before{
+                content: url('./images/illustration-box-desktop.svg');
+                position: absolute;
+                z-index: 10;
+                top: 40%;
+                left: -20%;
+              }
+            </style>
+            <div class="overflow-hidden h-full relative">
+                <img class="w-full" src="./images/illustration-woman-online-desktop.svg" alt="" style="margin-top: 48%; margin-left: 48%; transform: translate(-65%, -45%);">
+            </div>
+            </div>
+        </picture>
+      </div>
+      <div class="mb-7 lg:w-1/2 lg:pt-12 lg:pr-[6rem] lg:mb-0 lg:pl-6" x-data="data()">
+        <h1 class="uppercase font-KumbhSans text-4xl font-bold text-center my-6 lg:text-left lg:text-3xl lg:mb-9">faq</h1>
+        <template x-for="{title,info,id} in faqs" :key="id">
+          <div class="border-b pb-3 mb-4 overflow-hidden transition-all" :style="selected == id ? 'max-height:'+$el.scrollHeight+'px' : 'max-height:33px'">
+            <div class="flex justify-between focus cursor-pointer" x-on:click="selected != id ? selected = id : selected = false">
+              <h2 class="font-KumbhSans hover:text-Softred duration-300 text-[14px] text-Verydarkgrayishblue font-normal" x-text="title" :class="selected == id ?'font-black text-Verydarkdesaturatedblue':''"></h2>
+              <img class="self-center h-[8px] transition-all lg:h-[7px]" :class="selected == id ? 'rotate-180 pl-4' : 'pr-4'" src="./images/icon-arrow-down.svg"/>
+            </div>
+            <p class="font-KumbhSans text-[13px] pr-6 text-Darkgrayishblue mt-2 mb-1 lg:text-[12px]" x-text="info"></p>
+          </div>
+        </template>
+      </div>
+  </section>
+  <footer class="mt-10">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/profile/JMartinez904" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">José Martínez</a>.
+    </div>
+  </footer>
+  <script src="./public/scripts.js" defer></script>
+  <script>
+    function data() {
+      return {
+        selected:false,
+        faqs:[
+          {
+            id:1,
+            title: 'How many team members can I invite?',
+            info: 'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.'
+          },
+          {
+            id:2,
+            title: 'What is the maximum file upload size?',
+            info: 'No more than 2GB. All files in your account must fit your allotted storage space.'
+          },
+          {
+            id:3,
+            title: 'How do I reset my password?',
+            info: "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you"
+          },
+          {
+            id:4,
+            title: 'Can I cancel my subscription?',
+            info: "Yes! Send us a message and we’ll process your request no questions asked."
+          },
+          {
+            id:5,
+            title: 'Do you provide additional support?',
+            info: 'Chat and email support is available 24/7. Phone lines are open during normal business hours.'
+          }
+        ]
+      }
+    }
+  </script>
+</body>
+</html>
