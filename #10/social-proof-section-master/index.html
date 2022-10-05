@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social proof section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="flex flex-col justify-center items-center h-full">
+  <style>
+    @media (max-width: 1280px) {
+      main {
+        background-image: url('./images/bg-pattern-top-mobile.svg'),url('./images/bg-pattern-bottom-mobile.svg');
+        background-repeat: no-repeat,no-repeat;
+        background-position: right top,left bottom;
+      }
+    }
+    @media (min-width: 1280px) {
+      main {
+        background-image: url('./images/bg-pattern-top-desktop.svg'),url('./images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat,no-repeat;
+        background-position: 3vh top,left 46vh bottom -13vh;
+      }
+    }
+  </style>
+  <main class="max-w-[21rem] flex flex-col px-4 mt-10 xl:max-w-none xl:w-full xl:mt-0 xl:pt-[7.5rem] xl:px-[11rem]">
+    <section class="flex flex-col xl:flex-row xl:justify-between">
+      <div class="xl:w-1/2 xl:pr-[6.5rem]">
+        <h1 class="text-3xl font-LeagueSpartan font-black text-center text-VeryDarkMagenta pt-20 px-10 leading-6 xl:text-[3.25rem] xl:leading-[3rem] xl:text-left xl:p-0">
+          10,000+ of our users love our products.
+        </h1>
+        <p class="text-base font-normal font-LeagueSpartan text-VeryDarkMagenta text-center whitespace-pre-line mb-8 leading-5 text-[15px] xl:text-lg xl:text-left xl:whitespace-normal xl:mt-6 xl:leading-snug">
+          We only provide great products combined 
+          with excellent customer service. See what 
+          our satisfied customers are saying about our services.
+        </p>
+      </div>
+      <div class="flex flex-col xl:w-1/2 xl:mt-6 xl:pl-5">
+        <div class="p-2 w-full bg-LightGrayishMagenta rounded-lg mb-3 flex flex-col xl:flex-row xl:py-4 xl:px-8 xl:items-center xl:w-[435px] xl:self-start xl:mb-4">
+          <picture class="flex items-center justify-center pb-2 space-x-2 xl:pb-0 xl:mr-8">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+          </picture>
+          <p class="text-center text-[15px] font-bold text-VeryDarkMagenta">
+            Rated 5 Stars in Reviews
+          </p>
+        </div>
+        <div class="p-2 w-full bg-LightGrayishMagenta rounded-lg mb-3 flex flex-col xl:flex-row xl:py-4 xl:px-8 xl:items-center xl:w-[435px] xl:self-center xl:mb-4">
+          <picture class="flex items-center justify-center pb-2 space-x-2 xl:pb-0 xl:mr-8">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+          </picture>
+          <p class="text-center text-[15px] font-bold text-VeryDarkMagenta">
+            Rated 5 Stars in Report Guru
+          </p>
+        </div>
+        <div class="p-2 w-full bg-LightGrayishMagenta rounded-lg mb-3 flex flex-col xl:flex-row xl:py-4 xl:px-8 xl:items-center xl:w-[435px] xl:self-end xl:mb-4">
+          <picture class="flex items-center justify-center pb-2 space-x-2 xl:pb-0 xl:mr-8">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+          </picture>
+          <p class="text-center text-[15px] font-bold text-VeryDarkMagenta">
+            Rated 5 Stars in BestTech
+          </p>
+        </div>
+     </div>
+    </section>
+    <div class="mt-10 pb-12 flex flex-col xl:flex-row xl:space-x-7 xl:mt-9 xl:pb-0 xl:min-h-[16rem]">
+      <article class="bg-VeryDarkMagenta px-8 rounded-lg mb-4 xl:w-[33%] xl:pt-2 xl:pb-3 xl:self-start">
+        <div class="flex items-center pt-8">
+          <picture class="mr-5 xl:mr-6">
+            <img src="./images/image-colton.jpg" alt="Colton Smith" 
+            class="rounded-full h-10"
+            >
+          </picture>
+          <p class="font-LeagueSpartan font-bold text-white text-[15px] xl:leading-tight xl:text-[16px]">
+            Colton Smith
+            <span class="block text-SoftPink font-normal">
+              Verified Buyer
+            </span>
+          </p>
+        </div>
+        <p class="text-white font-LeagueSpartan text-[15px] pt-5 pb-6 xl:pt-6 xl:text-[16px] xl:leading-snug">
+          “ We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent! ”
+        </p>
+      </article>
+      <article class="bg-VeryDarkMagenta px-8 rounded-lg mb-4 xl:w-[33%] xl:mb-0 xl:pt-2 xl:pb-3 xl:self-center">
+        <div class="flex items-center pt-8">
+          <picture class="mr-5 xl:mr-6">
+            <img src="./images/image-irene.jpg" alt="Irene Roberts" 
+            class="rounded-full h-10"
+            >
+          </picture>
+          <p class="font-LeagueSpartan font-bold text-white text-[15px] xl:leading-tight xl:text-[16px]">
+            Irene Roberts
+            <span class="block text-SoftPink font-normal">
+              Verified Buyer
+            </span>
+          </p>
+        </div>
+        <p class="text-white font-LeagueSpartan text-[15px] pt-5 pb-6 xl:pt-6 xl:text-[16px] xl:leading-snug xl:pr-2">
+          “ Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery. ”
+        </p>
+      </article>
+      <article class="bg-VeryDarkMagenta px-8 rounded-lg mb-4 xl:w-[33%] xl:mb-0 xl:self-end xl:pt-2 xl:pb-3">
+        <div class="flex items-center pt-8">
+          <picture class="mr-5 xl:mr-6">
+            <img src="./images/image-anne.jpg" alt="Irene Roberts" 
+            class="rounded-full h-10"
+            >
+          </picture>
+          <p class="font-LeagueSpartan font-bold text-white text-[15px] xl:leading-tight xl:text-[16px]">
+              Anne Wallace
+            <span class="block text-SoftPink font-normal">
+              Verified Buyer
+            </span>
+          </p>
+        </div>
+        <p class="text-white font-LeagueSpartan text-[15px] pt-5 pb-6 xl:pt-6 xl:text-[16px] xl:leading-snug">
+          “ Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone! ”
+        </p>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">José Martínez</a>.
+    </div>
+  </footer>
+</body>
+</html>
