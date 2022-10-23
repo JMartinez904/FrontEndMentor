@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-error {
+    background: url('images/icon-error.svg') no-repeat;
+    background-position: 95% 50%;
+    border: 2px solid hsl(0, 100%, 74%);
+    outline: hsl(0, 100%, 74%); 
+}
+
+.p-error,
+.p-email__error {
+    @apply text-Red text-xs text-right font-medium italic pt-2;
+}
