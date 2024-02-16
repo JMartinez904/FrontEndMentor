@@ -38,7 +38,7 @@ export const Card = () => {
   
 
   return (
-    <div className="flex flex-col gap-10 max-w-[90vw] md:min-h-[657px] md:max-w-[841px] bg-white w-full rounded-cardMobile sm:rounded-card p-8 sm:pt-14 sm:px-12">
+    <div className="flex flex-col gap-10 max-w-[90vw] md:max-h-[647px] md:max-w-[841px] bg-white w-full rounded-cardMobile sm:rounded-card p-8 sm:pt-14 sm:px-12">
       <FormDate setDates={setDates}></FormDate>
       <section className="font-poppins md:h-[25rem] flex flex-col text-5xl sm:text-8xl italic font-bold justify-center gap-4 pt-16 sm:pt-0">
         <p>

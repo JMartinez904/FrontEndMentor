@@ -63,6 +63,7 @@ export const calculateAge = (year: number, months: number, day: number) => {
     months,
     day
   );
+
   const currentDays = calculateDaysTranscurrent(
     monthsCollection,
     currentMonth,
@@ -73,9 +74,9 @@ export const calculateAge = (year: number, months: number, day: number) => {
     daysTillBirthDay,
     leapYear(year) ? 366 : 365
   );
-
+  
   const { months: monthsPassed, daysRemain } =
-    calculateMonthsAndDaysBasedOnMonths(monthsCollection, currentMonth, days);
+    calculateMonthsAndDaysBasedOnMonths(monthsCollection, months, days);
 
   const currentYear = dateNow.getFullYear();
   const yearTranscurrent = calculateYears(
@@ -84,9 +85,11 @@ export const calculateAge = (year: number, months: number, day: number) => {
     year
   );
 
-    return {
-      daysRemain, monthsPassed, yearTranscurrent
-    }
+  return {
+    daysRemain,
+    monthsPassed,
+    yearTranscurrent,
+  };
 };
 
 const calculateDays = (
@@ -131,6 +134,8 @@ const calculateMonthsAndDaysBasedOnMonths = (
 
   for (const [key, value] of Object.entries(monthsWithDays)) {
     let start: number = months;
+
+    console.log(day);
 
     if (value > day) {
       monthsTillBirthDay =
