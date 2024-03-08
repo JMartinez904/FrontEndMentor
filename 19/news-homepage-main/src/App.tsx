@@ -19,7 +19,7 @@ function App() {
   return (
     <Container>
       <Header openNav = {openNav}></Header>
-      <div className="px-[1rem] overflow-y-scroll sm:pl-[6.15rem] sm:pr-[5.15rem] sm:grid sm:grid-cols-layoutDesktop sm:gap-5">
+      <div className="px-[1rem] overflow-y-scroll sm:pl-[6.15rem] sm:pr-[5.15rem] sm:grid sm:grid-cols-layoutDesktop sm:gap-5 sm:overflow-auto">
         <MainArticle></MainArticle>
         <ArticlesAds></ArticlesAds>
         <AsideArticles></AsideArticles>

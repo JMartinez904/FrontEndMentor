@@ -1,7 +1,7 @@
 
 export const AsideArticles = () => {
   return (
-    <aside className="mt-[4.25rem] font-inter flex flex-col gap-8 pb-4 sm:col-span-2 sm:flex-row sm:mt-[1.75rem] sm:gap-5">
+    <aside className="mt-[4.25rem] font-inter flex flex-col gap-8 pb-4 sm:col-span-2 sm:flex-row sm:mt-[1.75rem] sm:gap-4">
       <article className="flex gap-6 sm:gap-4">
         <picture>
           <img
@@ -10,9 +10,9 @@ export const AsideArticles = () => {
             alt=""
           />
         </picture>
-        <section className="flex flex-col gap-[0.8rem] sm:min-w-[151px] sm:gap-[0.20rem] ">
+        <section className="flex flex-col gap-[0.8rem] sm:max-w-[154px] sm:gap-[0.20rem] ">
           <div className="flex flex-col gap-[0.9rem] sm:gap-2">
-            <span className="text-3xl leading-7 font-bold text-grayishBlue sm:text-lg sm:leading-5 sm:text-[1.45rem] ">
+            <span className="text-3xl leading-7 font-bold text-grayishBlue sm:text-lg sm:leading-5 sm:text-[1.4rem] ">
               01
             </span>
             <h4 className="text-[1.15rem] leading-6 font-extrabold sm:text-xs">
@@ -32,9 +32,9 @@ export const AsideArticles = () => {
             alt=""
           />
         </picture>
-        <section className="flex flex-col gap-[0.8rem] sm:min-w-[151px] sm:gap-[0.20rem]">
+        <section className="flex flex-col gap-[0.8rem] sm:max-w-[154px] sm:gap-[0.20rem]">
           <div className="flex flex-col gap-[0.9rem] sm:gap-2">
-            <span className="text-3xl leading-7 font-bold text-grayishBlue sm:text-lg sm:leading-5 sm:text-[1.45rem]">
+            <span className="text-3xl leading-7 font-bold text-grayishBlue sm:text-lg sm:leading-5 sm:text-[1.4rem]">
               02
             </span>
             <h4 className="text-[1.15rem] font-extrabold leading-6 sm:text-xs">
@@ -54,9 +54,9 @@ export const AsideArticles = () => {
             alt=""
           />
         </picture>
-        <section className="flex flex-col gap-[0.8rem] sm:min-w-[151px] sm:gap-[0.20rem]">
+        <section className="flex flex-col gap-[0.8rem] sm:max-w-[154px] sm:gap-[0.20rem]">
           <div className="flex flex-col gap-[0.9rem] sm:gap-2">
-            <span className="text-3xl leading-7 font-bold text-grayishBlue sm:text-lg sm:leading-5 sm:text-[1.45rem]">
+            <span className="text-3xl leading-7 font-bold text-grayishBlue sm:text-lg sm:leading-5 sm:text-[1.4rem]">
               03
             </span>
             <h4 className="text-[1.15rem] font-extrabold leading-6  sm:text-xs">
