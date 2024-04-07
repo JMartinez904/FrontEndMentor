@@ -1,0 +1,18 @@
+@import url("./cssReset.css");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .profile-img {
+        @apply min-h-[39px] max-h-[39px] min-w-[39px] max-w-[39px] sm:min-h-[2.9rem] sm:max-h-[2.9rem];
+    }
+}
+
+@layer utilities {
+    .word-spacing-md {
+        word-spacing: 0.03rem;
+    } 
+}

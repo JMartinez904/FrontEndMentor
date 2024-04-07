@@ -1,0 +1,79 @@
+[
+    {
+        "imgProfile": "/images/avatar-mark-webber.webp",
+        "profileName": "Mark Webber",
+        "action": "reacted to your recent post",
+        "post": "My first tournament today!",
+        "postingTime": "1m ago",
+        "isChecked": false,
+        "group": "",
+        "message": "",
+        "imgPost": ""
+    },
+    {
+        "imgProfile": "/images/avatar-angela-gray.webp",
+        "profileName": "Angela Gray",
+        "action": "followed you",
+        "post": "",
+        "postingTime": "5m ago",
+        "isChecked": false,
+        "group": "",
+        "message": "",
+        "imgPost": ""
+    },
+    {
+        "imgProfile": "/images/avatar-jacob-thompson.webp",
+        "profileName": "Jacob Thompson",
+        "action": "has joined your group",
+        "post": "",
+        "postingTime": "1 day ago",
+        "isChecked": false,
+        "group": "Chess Club",
+        "message": "",
+        "imgPost": ""
+    },
+    {
+        "imgProfile": "/images/avatar-rizky-hasanuddin.webp",
+        "profileName": "Rizky Hasanuddin",
+        "action": "sent you a private message",
+        "post": "",
+        "postingTime": "5 days ago",
+        "isChecked": true,
+        "group": "",
+        "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+        "imgPost": ""
+    },
+    {
+        "imgProfile": "/images/avatar-kimberly-smith.webp",
+        "profileName": "Kimberly Smith",
+        "action": "commented on your picture",
+        "post": "",
+        "postingTime": "1 week ago",
+        "isChecked": true,
+        "group": "",
+        "message": "",
+        "imgPost": "/images/image-chess.webp"
+    },
+    {
+        "imgProfile": "/images/avatar-nathan-peterson.webp",
+        "profileName": "Nathan Peterson",
+        "action": "reacted to your recent post",
+        "post": "5 end-game strategies to increase your win rate",
+        "postingTime": "2 weeks ago",
+        "isChecked": true,
+        "group": "",
+        "message": "",
+        "imgPost": ""
+    },
+    {
+        "imgProfile": "/images/avatar-anna-kim.webp",
+        "profileName": "Anna Kim",
+        "action": "left the group",
+        "post": "",
+        "postingTime": "2 weeks ago",
+        "isChecked": true,
+        "group": "Chess Club",
+        "message": "",
+        "imgPost": ""
+    }
+]
